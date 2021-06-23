@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>Catering adda</title>
+    <style>
+
+      /* boobules starts*/
+
+      body {
+	
+	color: #333;
+	font: 100% Lato, Arial, Sans Serif;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#background-wrap {
+    bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+/* KEYFRAMES */
+
+@-webkit-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-moz-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-webkit-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@-moz-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+    -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: -5%;
+	top: 5%;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x2 {
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 5%;
+	top: 80%;
+	
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x3 {
+    -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 10%;
+	top: 40%;
+	
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+.x4 {
+    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	
+	left: 20%;
+	top: 0;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x5 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 30%;
+	top: 50%;
+	
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.x6 {
+    -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 50%;
+	top: 0;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.x7 {
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 65%;
+	top: 70%;
+	
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x8 {
+    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	
+	left: 80%;
+	top: 10%;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x9 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 90%;
+	top: 50%;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x10 {
+    -webkit-animation: animateBubble 26s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 80%;
+	top: 80%;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+.x12 {
+    -webkit-animation: animateBubble 26s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 36s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 16s linear infinite, sideWays 5s ease-in-out infinite alternate;
+	
+	left: 60%;
+	top: 90%;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+.x11 {
+    -webkit-animation: animateBubble 26s linear infinite, sideWays 5s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 26s linear infinite, sideWays 5s ease-in-out infinite alternate;
+	animation: animateBubble 26s linear infinite, sideWays 5s ease-in-out infinite alternate;
+	
+	left: 20%;
+	top: 80%;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+/* OBJECTS */
+
+.bubble {
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	
+    height: 200px;
+	position: absolute;
+	width: 200px;
+}
+
+.bubble:after {
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 70%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.5)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	-moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	
+	content: "";
+    height: 180px;
+	left: 10px;
+	position: absolute;
+	width: 180px;
+}
+      /*boubles end*/
+      /*wave css starts*/
+      @keyframes move_wave {
+        0% {
+            transform: translateX(0) translateZ(0) scaleY(1)
+        }
+        50% {
+            transform: translateX(-25%) translateZ(0) scaleY(0.55)
+        }
+        100% {
+            transform: translateX(-50%) translateZ(0) scaleY(1)
+        }
+    }
+    .waveWrapper {
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+    }
+    
+    .bgTop {
+        z-index: 15;
+        opacity: 0.5;
+    }
+    .bgMiddle {
+        z-index: 10;
+        opacity: 0.75;
+    }
+    .bgBottom {
+        z-index: 5;
+    }
+    .wave {
+        position: absolute;
+        left: 0;
+        width: 200%;
+        height: 100%;
+        background-repeat: repeat no-repeat;
+        background-position: 0 bottom;
+        transform-origin: center bottom;
+    }
+    .waveTop {
+        background-size: 50% 100px;
+    }
+    .waveAnimation .waveTop {
+      animation: move-wave 3s;
+       -webkit-animation: move-wave 3s;
+       -webkit-animation-delay: 1s;
+       animation-delay: 1s;
+    }
+    .waveMiddle {
+        background-size: 50% 120px;
+    }
+    .waveAnimation .waveMiddle {
+        animation: move_wave 10s linear infinite;
+    }
+    .waveBottom {
+        background-size: 50% 100px;
+    }
+    .waveAnimation .waveBottom {
+        animation: move_wave 15s linear infinite;
+    }
+
+
+
+
+
+      /*wave css ends*/
+
+body {
+
+
+background: #e0e0e0;
+font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+font-size: 14px;
+color: #000;
+display: flex;
+margin: 0;
+padding: 0;
+justify-content: center;
+align-items: center;
+
+}
+
+
+
+
+
+.swiper-container {
+width: 100%;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+.swiper-slide {
+background-position: center;
+background-size: cover;
+width: 300px;
+height: 300px;
+background: #e0e0e0;
+
+-webkit-box-reflect:below 1px linear-gradient(transparent,transparent,#0006);
+
+}
+   
+.card {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  border-radius: 50px;
+background: #e0e0e0;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+</style>
+</head>
+<body>
+  
+  
+  
+  
+  <!-- Swiper -->
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        
+        
+    <!--Start swiper-slide-->
+        <div class="swiper-slide"><div class="card">
+          <div calss="img-card">
+            <img src="aswini.jpeg" alt="Ashwini" style="width:60%; height:70%; filter: drop-shadow(0 0 0.75rem #bebebe);border-radius: 10%;padding-top: 10px;">
+          </div>
+        <h3>Ashwini K G</h3>
+        <p class="title"> Ashu</p>
+        
+        <div style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a> 
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="https://www.instagram.com/kg_ashwini/"><i class="fa fa-facebook"></i></a> 
+        </div>
+    </div>
+</div>
+        <!--End swiper-slide-->
+        <!--Start swiper-slide-->
+        <div class="swiper-slide"><div class="card">
+          <div calss="img-card">
+            <img src="archana.jpeg" alt="Ashwini" style="width:50%; filter: drop-shadow(0 0 0.75rem #bebebe);border-radius: 10%;padding-top: 10px;">
+          </div>
+        <h3>Archana</h3>
+        <p class="title"> Archu</p>
+        
+        <div style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a> 
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="https://www.instagram.com/archanah7950/"><i class="fa fa-facebook"></i></a> 
+        </div>
+    </div>
+</div>
+        <!--End swiper-slide-->
+        <!--Start swiper-slide-->
+        <div class="swiper-slide"><div class="card">
+            <div calss="img-card">
+              <img src="bindu.jpeg" alt="bindu" style="width:50%; filter: drop-shadow(0 0 0.75rem #bebebe);border-radius: 10%;padding-top: 10px;">
+            </div>
+          <h3>Bindu K.G</h3>
+          <p class="title">Bindu</p>
+          
+          <div style="margin: 24px 0;">
+            <a href="#"><i class="fa fa-dribbble"></i></a> 
+            <a href="#"><i class="fa fa-twitter"></i></a>  
+            <a href="#"><i class="fa fa-linkedin"></i></a>  
+            <a href="https://www.instagram.com/bindu_k_gunderi/"><i class="fa fa-facebook"></i></a> 
+          </div>
+        </div>
+    </div>
+          <!--End swiper-slide-->
+
+           <!--Start swiper-slide-->
+        <div class="swiper-slide"><div class="card">
+          <div calss="img-card">
+            <img src="channesh.jpeg" alt="bindu" style="width:70%; filter: drop-shadow(0 0 0.75rem #bebebe);border-radius: 10%;padding-top: 10px;">
+          </div>
+        <h3>Channesh BS</h3>
+        <p class="title"> Handsome</p>
+        
+        <div style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a> 
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="https://www.instagram.com/aaryaa_channesh/"><i class="fa fa-facebook"></i></a> 
+        </div>
+      </div>
+  </div>
+        <!--End swiper-slide-->
+
+          <!--Start swiper-slide-->
+        <div class="swiper-slide"><div class="card">
+            <div calss="img-card">
+              <img src="boomika.jpeg" alt="Boomika Shetty" style="width:50%; filter: drop-shadow(0 0 0.75rem #bebebe);border-radius: 10%;padding-top: 10px;">
+            </div>
+          <h3>Boomika Shetty</h3>
+          <p class="title">Boomi</p>
+          
+          <div style="margin: 24px 0;">
+            <a href="#"><i class="fa fa-dribbble"></i></a> 
+            <a href="#"><i class="fa fa-twitter"></i></a>  
+            <a href="#"><i class="fa fa-linkedin"></i></a>  
+            <a href="#"><i class="fa fa-facebook"></i></a> 
+          </div>
+        </div>
+    </div>
+          <!--End swiper-slide-->
+
+          <!--Start swiper-slide-->
+        <div class="swiper-slide"><div class="card">
+            <div calss="img-card">
+              <img src="darshu.jpeg" alt="darshu2 " style="width:80%; filter: drop-shadow(0 0 0.75rem #bebebe);border-radius: 10%;padding-top: 10px;">
+            </div>
+          <h3>Darshan </h3>
+          <p class="title">Darshu </p>
+          
+          <div style="margin: 24px 0;">
+            <a href="#"><i class="fa fa-dribbble"></i></a> 
+            <a href="#"><i class="fa fa-twitter"></i></a>  
+            <a href="#"><i class="fa fa-linkedin"></i></a>  
+            <a href="https://www.instagram.com/darshan_k_naik/"><i class="fa fa-facebook"></i></a> 
+          </div>
+        </div>
+    </div>
+          <!--End swiper-slide-->
+
+          <!--Start swiper-slide-->
+        <div class="swiper-slide"><div class="card">
+            <div calss="img-card">
+              <img src="kavya.jpeg" alt="kavya" style="width:70%; filter: drop-shadow(0 0 0.75rem #bebebe);border-radius: 10%;padding-top: 10px;">
+            </div>
+          <h3>Kavay Prasad</h3>
+          <p class="title">Embrace Yourself</p>
+          
+          <div style="margin: 24px 0;">
+            <a href="#"><i class="fa fa-dribbble"></i></a> 
+            <a href="#"><i class="fa fa-twitter"></i></a>  
+            <a href="#"><i class="fa fa-linkedin"></i></a>  
+            <a href="https://www.instagram.com/kavya_prasad_s/"><i class="fa fa-facebook"></i></a> 
+          </div>
+        </div>
+    </div>
+          <!--End swiper-slide-->
+          <!--Start swiper-slide-->
+        <div class="swiper-slide"><div class="card">
+          <div calss="img-card">
+            <img src="nikath.jpeg" alt="sanju" style="width:70%; filter: drop-shadow(0 0 0.75rem #bebebe);border-radius: 10%;padding-top: 10px;">
+          </div>
+        <h3> Nikath</h3>
+        <p class="title">..</p>
+        
+        <div style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a> 
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a> 
+        </div>
+      </div>
+  </div>
+        <!--End swiper-slide-->
+
+        
+          <!--Start swiper-slide-->
+        <div class="swiper-slide"><div class="card">
+            <div calss="img-card">
+              <img src="madu.jpeg" alt="madu" style="width:50%; filter: drop-shadow(0 0 0.75rem #bebebe);border-radius: 10%;padding-top: 10px;">
+            </div>
+          <h3>Madhushree MC</h3>
+          <p class="title">Madhu</p>
+          
+          <div style="margin: 24px 0;">
+            <a href="#"><i class="fa fa-dribbble"></i></a> 
+            <a href="#"><i class="fa fa-twitter"></i></a>  
+            <a href="#"><i class="fa fa-linkedin"></i></a>  
+            <a href="https://www.instagram.com/single_soul_msa/"><i class="fa fa-facebook"></i></a> 
+          </div>
+        </div>
+    </div>
+          <!--End swiper-slide-->
+
+          <!--Start swiper-slide-->
+        <div class="swiper-slide"><div class="card">
+            <div calss="img-card">
+              <img src="nandi.jpeg" alt="nandi" style="width:50%; filter: drop-shadow(0 0 0.75rem #bebebe);border-radius: 10%;padding-top: 10px;">
+            </div>
+          <h3>Nanditha </h3>
+          <p class="title">Nandi</p>
+          
+          <div style="margin: 24px 0;">
+            <a href="#"><i class="fa fa-dribbble"></i></a> 
+            <a href="#"><i class="fa fa-twitter"></i></a>  
+            <a href="#"><i class="fa fa-linkedin"></i></a>  
+            <a href="https://www.instagram.com/nanditha_kc/"><i class="fa fa-facebook"></i></a> 
+          </div>
+        </div>
+    </div>
+          <!--End swiper-slide-->
+          
+          
+          <!--Start swiper-slide-->
+        <div class="swiper-slide"><div class="card">
+            <div calss="img-card">
+              <img src="pooja.jpeg" alt="nandi" style="width:50%; filter: drop-shadow(0 0 0.75rem #bebebe);border-radius: 10%;padding-top: 10px;">
+            </div>
+          <h3> Pooja HP</h3>
+          <p class="title">Ok</p>
+          
+          <div style="margin: 24px 0;">
+            <a href="#"><i class="fa fa-dribbble"></i></a> 
+            <a href="#"><i class="fa fa-twitter"></i></a>  
+            <a href="#"><i class="fa fa-linkedin"></i></a>  
+            <a href="#"><i class="fa fa-facebook"></i></a> 
+          </div>
+        </div>
+    </div>
+          <!--End swiper-slide-->
+          <!--Start swiper-slide-->
+        <div class="swiper-slide"><div class="card">
+          <div calss="img-card">
+            <img src="pavana.jpeg" alt="sanju" style="width:50%; filter: drop-shadow(0 0 0.75rem #bebebe);border-radius: 10%;padding-top: 10px;">
+          </div>
+        <h3> Sanjay</h3>
+        <p class="title">Romio</p>
+        
+        <div style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a> 
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a> 
+        </div>
+      </div>
+  </div>
+        <!--End swiper-slide-->
+
+
+           <!--Start swiper-slide-->
+        <div class="swiper-slide"><div class="card">
+          <div calss="img-card">
+            <img src="sanju.jpeg" alt="sanju" style="width:70%; filter: drop-shadow(0 0 0.75rem #bebebe);border-radius: 10%;padding-top: 10px;">
+          </div>
+        <h3> Sanjay</h3>
+        <p class="title">Boss</p>
+        
+        <div style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a> 
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="https://www.instagram.com/s_won4/"><i class="fa fa-facebook"></i></a> 
+        </div>
+      </div>
+  </div>
+        <!--End swiper-slide-->
+
+        <!--Start swiper-slide-->
+        <div class="swiper-slide"><div class="card">
+          <div calss="img-card">
+            <img src="shashi.jpeg" alt="Shashi" style="width:50%; filter: drop-shadow(0 0 0.75rem #bebebe);border-radius: 10%;padding-top: 10px;">
+          </div>
+        <h3> Shashi</h3>
+        <p class="title">Gabri</p>
+        
+        <div style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a> 
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="https://www.instagram.com/shashiv30/"><i class="fa fa-facebook"></i></a> 
+        </div>
+      </div>
+  </div>
+        <!--End swiper-slide-->
+<!--Start swiper-slide-->
+<div class="swiper-slide"><div class="card">
+  <div calss="img-card">
+    <img src="siri.jpeg" alt="sanju" style="width:50%; filter: drop-shadow(0 0 0.75rem #bebebe);border-radius: 10%;padding-top: 10px;">
+  </div>
+<h3>Siri </h3>
+<p class="title">RCB</p>
+
+<div style="margin: 24px 0;">
+  <a href="#"><i class="fa fa-dribbble"></i></a> 
+  <a href="#"><i class="fa fa-twitter"></i></a>  
+  <a href="#"><i class="fa fa-linkedin"></i></a>  
+  <a href="https://www.instagram.com/12__nisha/"><i class="fa fa-facebook"></i></a> 
+</div>
+</div>
+</div>
+<!--End swiper-slide-->
+<!--Start swiper-slide-->
+<div class="swiper-slide"><div class="card">
+  <div calss="img-card">
+    <img src="tanu.jpeg" alt="sanju" style="width:50%; filter: drop-shadow(0 0 0.75rem #bebebe);border-radius: 10%;padding-top: 10px;">
+  </div>
+<h3> Tanuja S.A</h3>
+<p class="title">Tanu</p>
+
+<div style="margin: 24px 0;">
+  <a href="#"><i class="fa fa-dribbble"></i></a> 
+  <a href="#"><i class="fa fa-twitter"></i></a>  
+  <a href="#"><i class="fa fa-linkedin"></i></a>  
+  <a href="https://www.instagram.com/am__tanu/"><i class="fa fa-facebook"></i></a> 
+</div>
+</div>
+</div>
+<!--End swiper-slide-->
+      
+        <div class="swiper-slide"><div class="card">
+          <div calss="img-card">
+            <img src="Mru.jpg" alt="Mruhtyunjaya S" style="width:50%; filter: drop-shadow(0 0 0.75rem #bebebe);border-radius: 10%;padding-top: 10px;">
+          </div>
+        <h3>Mruhtyunjaya S</h3>
+        <p class="title">CEO & Founder, Example</p>
+        
+        <div style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a> 
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a> 
+        </div>
+        
+       </div>
+      </div>
+
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- slide ends-->
+    <!--wave html starts-->
+    <div class="waveWrapper waveAnimation">
+      <div class="waveWrapperInner bgTop">
+        <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+      </div>
+      <div class="waveWrapperInner bgMiddle">
+        <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+      </div>
+      <div class="waveWrapperInner bgBottom">
+        <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+      </div>
+    </div>
+    
+    <!--wave html ends-->
+
+
+    <!-- bubles starts-->
+
+    <div id="background-wrap">
+      <div class="bubble x1"></div>
+      <div class="bubble x2"></div>
+      <div class="bubble x3"></div>
+      <div class="bubble x4"></div>
+      <div class="bubble x5"></div>
+      <div class="bubble x6"></div>
+      <div class="bubble x7"></div>
+      <div class="bubble x8"></div>
+      <div class="bubble x9"></div>
+      <div class="bubble x10"></div>
+      <div class="bubble x12"></div>
+      
+      <div class="bubble x11"></div>
+  </div>
+    <!-- bubles end-->
+
+    
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ <!-- Initialize Swiper -->
+ <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+     loop:true,
+     autoplay:{
+         delay:500,
+         disableOnInteration :false
+
+     },
+    });
+  </script>
+
+</body>
+</html>
